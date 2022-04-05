@@ -1,4 +1,0 @@
-.disabled{
-    /* prevents disabled elements from appearing interactable */
-  pointer-events: none;  
-}
