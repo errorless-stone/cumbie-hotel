@@ -2,54 +2,107 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
- <title>cumbie-lab-delta</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>cumbie-lab-hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
  <link rel="stylesheet" href="./styles/Home.css">
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
-
 </head>
 <body>
 
   <!-- navigation to make faux website seem more authentic uwu -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand disabled" href="#">Pitbulls and Perogies</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link"  href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./html/Signup.html">Signup</a>
-          </li>
+      <div class="collapse navbar-collapse me-auto mb-2 mb-lg-0" id="navCollapse">
+        <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/Signup.html">Signup</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/errorless-stone/cumbie-hotel" target="repo">Source Code</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://validator.unl.edu/?doc=https%3A%2F%2Ferrorless-stone.github.io%2Fcumbie-hotel%2F" target="nuchecker">Validator</a></li>
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> 
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="column">
-      <div class="card mt-3" id="abt-us-card">
-        <h5 class="card-title">Puppers and Taters</h5>  
+  <!-- main body of page -->
+  <div class="container-fluid">
+
+    <!-- Card provides overview of organization -->
+    <div class="row">
+      <div class="col-md-12 col-lg-6 ">
+        <div class="card mt-3" id="explanation">
+          <h5 class="card-title">
+            Get Ready for the most entertaining night of your life!
+          </h5>
+          <h6 class="card-subtitle text-muted">
+             "What's this all about?"
+          </h6>
+          <p class="card-body">
+            If you like dogs and starchy snacks, then science guarantees that you are going to love 
+            our organization. We host monthly meetings where members are given an opportunity to connect with rescued canines while enjoying a delicious
+            piece of polish quisine. Our hope is to find a lovely home for as many of these wayward animals as possible. However, interest in adoption
+            is not a requirement for attendance. Your time and affection alone are priceless for these pups. 
+          </p>
+        </div>
       </div>
+    
+
+      <!-- Card provides info and addtional link to signup page -->
+      <div class="col-md-12 col-lg-6">
+        <div class="card mt-3" id="signup-info">
+
+          <h5 class="card-title">
+            Want to join us?
+          </h5>
+
+          <h6 class="card-subtitle text-muted">
+             "Let's get some info.""
+          </h6>
+
+          <p class="card-body">
+            We'd love to see you sometime soon, but first we have to know a few things. Our signup process is quick and easy taking roughly 1.5 minutes to complete.
+            The information gathered is used solely to enhance your experience and kept 100% private. Once you're done, you will be provided with a meeting time and location that
+            best suits your availability. Click <a href="./html/Signup.html">here</a> or click the signup tab above to get started now!
+          </p>
+
+        </div>
+      </div>
+
+      <!-- card provides more information regarding operations -->
+      <div class="col-md-12 col-lg-6">
+        <div class="card mt-3" id="non-profit-info">
+
+          <h5 class="card-title">
+            P&P is a non-profit organization
+          </h5>
+
+          <h6 class="card-subtitle text-muted">
+            "What does that mean for me?"
+          </h6>
+
+          <p class="card-body">
+            Here at P&P, our main focus isn't making money - it's making memories. That means any money you donate will always 
+            go towards furthering our rescuing endeavors as well as enhancing the quality of our meet and greets. If you are interested in making a donation,
+            please call toll-free at </br> <b>1-800-PUPS</b> </br> OR </br> <b>1-800-7877</b> 
+          </p>
+
+        </div>
+      </div>
+
+      <!-- "Are they all pits?" card -->
+
     </div>
+
   </div>
-</div>
 
 
  
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-<script  src="./scripts/Home.js"></script>
-
-
-
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script  src="./scripts/index.js"></script>
+  
 </body>
 </html>
